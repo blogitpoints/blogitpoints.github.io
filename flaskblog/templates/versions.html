@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="pricing mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Free Tier -->
+        <div class="col-lg-6">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Basic</h5>
+              <h6 class="card-price text-center font-weight-bold">Free</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Posting</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Daily Motivation</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times" style="color: red;"></i></span>Points</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times" style="color: red;"></i></span>Messaging</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times" style="color: red;"></i></span>Messaging Games</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times" style="color: red;"></i></span>Clicker Games</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times" style="color: red;"></i></span>Jobs</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times" style="color: red;"></i></span>Task Manager</li>
+              </ul>
+              <a href="{{ url_for('users.register') }}" class="btn btn-block btn-primary text-uppercase">Go There</a>
+            </div>
+          </div>
+        </div>
+        <!-- Plus Tier -->
+        <div class="col-lg-6">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Premium</h5>
+              <h6 class="card-price text-center font-weight-bold">$5<span class="period">/month</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check" style="color: green;"></i></span>Posting</li>
+                <li><span class="fa-li"><i class="fas fa-check" style="color: green;"></i></span>Daily Motivation</li>
+                <li><span class="fa-li"><i class="fas fa-check" style="color: green;"></i></span>Points</li>
+                <li><span class="fa-li"><i class="fas fa-check" style="color: green;"></i></span>Messaging</li>
+                <li><span class="fa-li"><i class="fas fa-check" style="color: green;"></i></span>Messaging Games</li>
+                <li><span class="fa-li"><i class="fas fa-check" style="color: green;"></i></span>Clicker Games</li>
+                <li><span class="fa-li"><i class="fas fa-check" style="color: green;"></i></span>Jobs</li>
+                <li><span class="fa-li"><i class="fas fa-check" style="color: green;"></i></span>Task Manager</li>
+              </ul>
+              <a href="#" class="btn btn-block btn-primary text-uppercase">Coming Soon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}
